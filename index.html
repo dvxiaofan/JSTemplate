@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>test</title>
+</head>
+<body>
+
+	<!-- <table id="producttable">
+		<thead>
+			<tr>
+				<td>CODE</td>
+				<td>Name</td>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<template id="productrow">
+		<tr>
+			<td class="record"></td>
+			<td></td>
+		</tr>
+	</template> -->
+	
+	<div id="beach-info"></div>
+
+	<script type="text/template" id="beach-supplies">
+		<%	if(supplies.empty) { %>
+			<p>Whaaat?  Get to the beach anyway!</p>
+		<%	} %>
+
+		<ul>
+			<li> Sunscreen - <% if(supplies.sunscreen) {%> check! <%} %></li>
+			<% if (supplies.towel) { %>
+				<li>Towel - Yes, a <%= supplies.towel %> one! </li>
+			<% } %>
+			<li>Shades - <% if (supplies.shades) { %> check! <% } else { %> sadly, no! <% } %></li>
+		</ul>
+	</script>
+
+
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="node_modules/underscore/underscore-min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
