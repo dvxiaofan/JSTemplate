@@ -1,2 +1,3 @@
 # JSTemplate
-JavaScript template 在 underscore 中的应用
+
+结合 underscore 库 对 template 的理解
