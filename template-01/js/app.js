@@ -1,6 +1,6 @@
-function make(adj) {
-	return new Function('unon', "return unon[0].toUpperCase() + unon.slice(1) + ' is " + adj + "!'");
-}
+// function make(adj) {
+// 	return new Function('unon', "return unon[0].toUpperCase() + unon.slice(1) + ' is " + adj + "!'");
+// }
 
 // var isFun = make('fun');
 
@@ -54,8 +54,21 @@ function make(adj) {
 // }
 
 
+// var templateInfo = _.template(
+// 	$('#beach-supplies').html(), 
+// 	{variable: 'supplies'}
+// );
+
+// $('#beach-info').html(
+// 	templateInfo({
+// 		empty: false,
+// 		sunscreen: true,
+// 		towel: 'red'
+// 	})
+// );
+
 var templateInfo = _.template(
-	$('#beach-supplies').html(), 
+	$('#beach-supplies').html(),
 	{variable: 'supplies'}
 );
 
